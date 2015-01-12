@@ -150,6 +150,7 @@ var GRAPHZ =  GRAPHZ || {};
             currMax = Math.max(currMax, (transformedDataPoint.values[i] || 0));
         }
         transformedDataPoint.scale.max = currMax;
+        console.log(transformedDataPoint)
         return transformedDataPoint;
     }
 
@@ -190,6 +191,7 @@ var GRAPHZ =  GRAPHZ || {};
             transformedDataPoint.scale.max = (currMax + 1);
         	transformedDataSet.push(transformedDataPoint);
     	}
+    	console.log(transformedDataSet)
     	return transformedDataSet;
     }
 })(window);
